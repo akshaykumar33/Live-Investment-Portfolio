@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Copy static asset (portfolio.json) into the dist folder
-RUN mkdir -p dist/api/data && cp src/api/data/portfolio.json dist/api/data/
+RUN mkdir -p dist/src/api/data && cp src/api/data/portfolio.json dist/src/api/data/
 
 # Expose port
 EXPOSE 8000
